@@ -7,7 +7,9 @@
     "build": "tsc && cpy 'src/**/*' '!src/**/*.ts' dist --parents",
     "start": "node -r module-alias/register dist/index.js",
     "dev": "nodemon -r tsconfig-paths/register src/index.ts",
-    "prisma:generate": "prisma generate && cpy 'src/generated/**/*' dist/generated"
+    "prisma:generate": "prisma generate && cpy 'src/generated/**/*' dist/generated",
+    "prisma:migrate": "prisma migrate deploy",
+    "postinstall": "yarn prisma:generate && yarn prisma:migrate"
   },
   "dependencies": {
     "@prisma/client": "5.16.2",
