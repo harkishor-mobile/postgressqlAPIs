@@ -1,7 +1,7 @@
 {
   "name": "node-postgres-ts",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon -r tsconfig-paths/register src/index.ts",
@@ -33,5 +33,8 @@
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": "22.x"
   }
 }
