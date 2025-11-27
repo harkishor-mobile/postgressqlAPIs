@@ -1,8 +1,9 @@
 // src/routes/authRoutes.ts
 import { loginController } from '@controllers/auth/loginUser';
 import { registerController } from '@controllers/auth/registerUser';
+import { upload } from '@middlewares/upload';
 import { Router } from 'express';
-import { upload } from 'middlewares/upload';
+// import { upload } from '@middlewares/upload';
 
 const router = Router();
 

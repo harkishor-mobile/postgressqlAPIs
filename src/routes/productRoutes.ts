@@ -4,9 +4,10 @@ import { deleteProductController } from '@controllers/products/deleteProduct';
 import { getProductByIdController } from '@controllers/products/getProductById';
 import { getProductsController } from '@controllers/products/getProductsList';
 import { updateProductController } from '@controllers/products/updateProduct';
+import { upload } from '@middlewares/upload';
 import express from 'express';
-import { authMiddleware, isAdmin } from 'middlewares/authMiddleware';
-import { upload } from 'middlewares/upload';
+import { authMiddleware, isAdmin } from '@middlewares/authMiddleware';
+// import { upload } from '@middlewares/upload';
 
 const router = express.Router();
 

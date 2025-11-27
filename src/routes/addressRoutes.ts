@@ -5,7 +5,7 @@ import { getUserAddressesController } from '@controllers/addresses/getUserAddres
 import { getUserWithAddressesController } from '@controllers/addresses/getUserWithAddresses';
 import { updateAddressController } from '@controllers/addresses/updateAddressController';
 import { Router } from 'express';
-import { authMiddleware } from 'middlewares/authMiddleware';
+import { authMiddleware } from '@middlewares/authMiddleware';
 
 const router = Router();
 

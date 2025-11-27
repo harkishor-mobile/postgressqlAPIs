@@ -6,9 +6,9 @@ import { getUserByIdController } from '@controllers/users/getUserById';
 import { getUserListController } from '@controllers/users/getUserList';
 import { updateUserController } from '@controllers/users/updateUser';
 import { getUserProfileController } from '@controllers/users/getUserProfile';
-import { authMiddleware, isAdmin } from 'middlewares/authMiddleware';
-import { authorizeUser } from 'middlewares/authorizeUser';
-import { upload } from 'middlewares/upload';
+import { authMiddleware, isAdmin } from '@middlewares/authMiddleware';
+import { authorizeUser } from '@middlewares/authorizeUser';
+import { upload } from '@middlewares/upload';
 
 const router = Router();
 
